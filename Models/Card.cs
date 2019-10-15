@@ -7,6 +7,8 @@ namespace MtG_Decktester.Models
     {
         public int Id { get; set; } //Id field is required by the database for the primary key
         public string Name { get; set; }
+        
+        [Display(Name="Converted Mana Cost")]
         public int ConvertedManaCost { get; set; }
         //public string Type { get; set; }
         //TODO database to have column types (which will have in one row type and subtypes in own columns)
